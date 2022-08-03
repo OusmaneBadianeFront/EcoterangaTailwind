@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.hamburger{
+    cursor:pointer;
+    position: relative;
+    height:24px;
+    width: 24px;
+    transition:all 0.5s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    height:3px;
+    width: 24px;
+    background:#000000;
+    transition:all 0.5s;
+}
+
+.hamburger-middle{
+    transform:translatey(7px);
+}
+
+.hamburger-bottom{
+    transform:translatey(14px);
+}
+
+.open .hamburger-middle{
+    display:none;
+
+}
+
+.open .hamburger-top{
+    transform:rotate(45deg)
+
+}
+
+.open .hamburger-bottom{
+    transform:rotate(-45deg);
+
+}
+

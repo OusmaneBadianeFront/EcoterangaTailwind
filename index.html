@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body>
+   <nav class="relative container mx-auto p-6 border-yellow-90" >
+    <!-- MENU NAV -->
+    <div class="flex flex-row  p-6 justify-between">
+      <!-- MENU LEFT  -->
+      <div class="flex flex-row space-x-20 "> 
+        <div class="mb-24 md:w-180 lg:mb-0 lg:w-1/2 h-4 ">
+        <h2 class=" text-2xl font-bold text-lime-400  "> Eco Teranga</h2>
+     </div>
+      <div class=" hidden  flex-row space-x-5 lg:flex">
+        <a href="" class="text-black "></a>
+        <a href="" class="text-black ">About</a>
+         <a href="" class="text-black ">Team</a>
+         <a href="" class="text-black ">Contact</a>
+      </div>
+      </div>
+
+      <div class=" hidden mx-auto lg:mx-0  lg:flex space-x-4">
+        <a href="" class="px-4 py-2  text-1xl font-bold bg-lime-400 rounded-full text-white hover:opacity-70" >Register</a>
+        <a href="" class="px-4 py-2  text-1xl font-bold bg-grayishViolet rounded-full text-white hover:opacity-70" >Log In</a>
+     </div>
+
+      <!-- RIGHT-MENU -->
+
+      <button
+      id="menu-btn"
+      class="block hamburger  focus:outline-none lg:hidden"
+      type="button"
+    >
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+      </div>
+
+      <div id="menu" class=" hidden bg-grayishViolet items-center w-full
+      justify-center top-20 left-6 right-6">
+        <div class="flex flex-col text-center z-100 rounded-sm
+        space-y-5 font-bold lg:hidden">
+          <a href="" class="text-white w-full  hover:text-lime-400 "> Features</a>
+          <a href="" class="text-white w-full   hover:text-lime-400 ">Features </a>
+          <a href="" class="text-white w-full  hover:text-lime-400 " >Features </a>
+          <a href="" class="text-white w-full  hover:text-lime-400 " >Features </a> 
+        </div> 
+      </div>
+   </nav>
+
+   <hr class="breakline">
+
+   <section id="hero">
+    <!-- HERO DIV -->
+    <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row" >
+       <!-- HERO CONTENT -->
+       <div class="flex flex-col mx-auto space-y-10 mb-44  lg:mt-16 lg:w-1/2  xl-mb-52">
+          <h1 class="font-bold text-5xl text-center lg:text-left lg:max-w-md lg:text-5xl lg:mt-20">More than a Bag</h1>
+          <p class=" text-2xl text-center text-gray-400 lg:text-left lg:max-w-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cum possimus enim voluptatibus culpa? Illo.</p>
+          <div class="mx-auto lg:mx-0 ">
+             <a href="" class="px-8 py-2  text-2xl font-bold bg-lime-400 rounded-full text-white hover:opacity-70" >Get Started</a>
+          </div>
+       </div>
+       <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2 ">
+          <img src="/2011.i003.010..shopping bag basket set-03.jpg"  alt="">
+       </div>
+    </div>
+ </section>
+
+  <section id="about" class="mb-20">
+    <!-- ABOUT BOX -->
+    <div class="flex flex-col-reverse mx-auto lg:flex-row text ">
+      <!-- Image -box -->
+      <div class="flex flex-col-reverse lg:flex-row mx-auto lg:ml-20">
+        <div class=" flex flex-col  space-y-6 mt-20" >
+          <h1 class=" text-zinc-900 text-4xl font-bold  text-center">About Us</h1>
+          <p class="text-black max-w-xs md:max-w-md text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti nam illo praesentium consequuntur asperiores voluptas voluptatibus. Eos, voluptates. Eius laborum optio corrupti itaque alias veritatis necessitatibus amet maxime vitae fuga enim laudantium blanditiis, quibusdam ea earum atque debitis repudiandae sit perspiciatis ipsam? Sapiente quas voluptatem, ut non soluta cumque unde placeat optio, eaque aliquid quod pariatur sed asperiores hic architecto. Similique assumenda corporis voluptates doloremque temporibus, numquam nihil quibusdam commodi nemo omnis debitis eos deserunt sed, rem veritatis beatae cupiditate culpa nesciunt quisquam! Voluptas et error consequatur laboriosam optio nihil ea, culpa odit sed autem animi, provident obcaecati nisi?</p>
+        </div>
+       
+      </div>
+      <div class="flex flex-col-reverse mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2 ">
+        <img src="/2011.i003.010..shopping bag basket set-03.jpg"  alt="">
+      </div>
+
+    </div>
+  </section>
+
+  <section id="Activities" class="container mx-auto mb-16 ">
+    <div class="mx-auto">
+      <h2 class="text-5xl font-bold text-center capitalize">Products </h2>
+
+    </div>
+  </section>
+
+  <section id="features" class="pb-32 bg-gray-100">
+
+   
+    <div
+      class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7"
+    >
+      <!-- Horizontal Line -->
+      <div
+        class="hidden absolute top-24 w-10/12 left-16 h-3 bg-lime-400 md:block"
+      ></div>
+      <!-- Vertical Line -->
+      <div class="absolute w-2 left-1/2 h-full -ml-1 bg-lime-400 md:hidden"></div>
+
+      <!-- Box 1 -->
+      <div
+        class="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3"
+      >
+        <!-- Image Positioning -->
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <!-- Image Container For Background & Center -->
+          <div
+            class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+          >
+            <img src="images/icon-brand-recognition.svg" alt="" />
+          </div>
+        </div>
+        <h5
+          class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+        >
+          Brand Recognition
+        </h5>
+        <p class="text-center text-gray-400 md:text-left">
+          Boost your brand recognition with each click. Generic links don't
+          mean a thing. Branded links help instil confidence in your content.
+        </p>
+      </div>
+
+      <!-- Box 2 -->
+      <div
+        class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3"
+      >
+        <!-- Image Positioning -->
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <!-- Image Container For Background & Center -->
+          <div
+            class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+          >
+            <img src="images/icon-detailed-records.svg" alt="" />
+          </div>
+        </div>
+        <h5
+          class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+        >
+          Detailed records
+        </h5>
+        <p class="text-center text-gray-400 md:text-left">
+          Gain insights into who is clicking your links. Knowing when and
+          where people engage with your content helps inform better decisions.
+        </p>
+      </div>
+
+      <!-- Box 3 -->
+      <div
+        class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-16 md:w-1/3"
+      >
+        <!-- Image Positioning -->
+        <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+          <!-- Image Container For Background & Center -->
+          <div
+            class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+          >
+            <img src="images/icon-fully-customizable.svg" alt="" />
+          </div>
+        </div>
+        <h5
+          class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+        >
+          Fully customizable
+        </h5>
+        <p class="text-center text-gray-400 md:text-left">
+          Improve brand awareness and content discoverability through
+          customizable links, supercharging audience engagement.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-16 bg-veryDarkViolet">
+    <div
+      class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start"
+    >
+      <!-- Logo -->
+     
+      <h2 class=" text-2xl font-bold text-lime-400"> Eco Teranga</h2>
+
+
+      <!-- Menus Container -->
+      <div
+        class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0"
+      >
+        <!-- Menu 1 -->
+        <div class="flex flex-col items-center w-full md:items-start">
+          <div class="mb-5 font-bold text-white capitalize">Features</div>
+          <div class="flex flex-col items-center space-y-3 md:items-start">
+            <a href="#" class="capitalize text-grayishViolet hover:text-lime-400"
+              >Link shortening</a
+            >
+            <a href="#" class="capitalize text-grayishViolet hover:text-lime-400"
+              >Branded links</a
+            >
+            <a href="#" class="capitalize text-grayishViolet hover:text-lime-400"
+              >Analytics</a
+            >
+          </div>
+        </div>
+
+        <!-- Menu 2 -->
+        <div class="flex flex-col items-center w-full md:items-start">
+          <div class="mb-5 font-bold text-white capitalize">Resources</div>
+          <div class="flex flex-col items-center space-y-3 md:items-start">
+            <a href="#" class="capitalize text-grayishViolet hover:text-lime-400"
+              >Blog</a
+            >
+            <a href="#" class="capitalize text-grayishViolet hover:text-lime-400"
+              >Developers</a
+            >
+            <a href="#" class="capitalize text-grayishViolet hover:text-lime-400"
+              >Support</a
+            >
+          </div>
+        </div>
+
+        <!-- Menu 3 -->
+        <div class="flex flex-col items-center w-full md:items-start">
+          <div class="mb-5 font-bold text-white capitalize">Company</div>
+          <div class="flex flex-col items-center space-y-3 md:items-start">
+            <a href="#" class="capitalize text-grayishViolet hover:text-lime-400"
+              >About</a
+            >
+            <a href="#" class="capitalize text-grayishViolet hover:text-lime-400"
+              >Our Team</a
+            >
+            <a href="#" class="capitalize text-grayishViolet hover:text-lime-400"
+              >Careers</a
+            >
+            <a href="#" class="capitalize text-grayishViolet hover:text-lime-400"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Container -->
+      <div class="flex space-x-6">
+        <a href="#">
+          <img src="images/icon-facebook.svg" alt="" class="ficon" />
+        </a>
+        <a href="#">
+          <img src="images/icon-twitter.svg" alt="" class="ficon" />
+        </a>
+        <a href="#">
+          <img src="images/icon-pinterest.svg" alt="" class="ficon" />
+        </a>
+        <a href="#">
+          <img src="images/icon-instagram.svg" alt="" class="ficon" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+   <script src="/script.js"></script>
+  </body>
+</html>
